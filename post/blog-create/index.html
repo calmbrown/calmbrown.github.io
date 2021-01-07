@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Categories :: My New Hugo Site</title>
+    <title>Hugo 사용기 :: My New Hugo Site</title>
 
     
     <link href="/css/nucleus.css?1610025144" rel="stylesheet">
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/categories/">
+  <body class="" data-url="/post/blog-create/">
     <nav id="sidebar" class="">
 
 
@@ -89,8 +89,8 @@
   
     
     <li data-nav-id="/post/" title="Posts" class="dd-item
+        parent
         
-        active
         
         ">
       <a href="/post/">
@@ -136,7 +136,7 @@
  
   
     
-      <li data-nav-id="/post/blog-create/" title="Hugo 사용기" class="dd-item ">
+      <li data-nav-id="/post/blog-create/" title="Hugo 사용기" class="dd-item active">
         <a href="/post/blog-create/">
         Hugo 사용기
         
@@ -200,7 +200,13 @@
             
           
           
-            <a href='/'>My New Hugo Site</a> > Categories
+            
+            
+          
+          
+            <a href='/'>My New Hugo Site</a> > <a href='/post/'>Posts</a> > Hugo 사용기
+          
+        
           
         
           
@@ -211,7 +217,17 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#1-hugo-와-github를-이용한-블로그-만들기">1. Hugo 와 Github를 이용한 블로그 만들기</a></li>
+        <li><a href="#2-hugo-커스터마이징">2. Hugo 커스터마이징</a></li>
+        <li><a href="#3-마크다운">3. 마크다운</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -227,24 +243,73 @@
           
             <h1>
               
-                category ::
-              
-              Categories
+              Hugo 사용기
             </h1>
           
 
         
 
 
+<h3 id="1-hugo-와-github를-이용한-블로그-만들기">1. Hugo 와 Github를 이용한 블로그 만들기</h3>
+<ol>
+<li>
+<p>Git 설치</p>
+<blockquote>
+<p><a href="https://git-scm.com/">https://git-scm.com/</a></p>
+</blockquote>
+</li>
+<li>
+<p>Hugo 설치</p>
+<blockquote>
+<p><a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a><br>
+환경변수 설정</p>
+</blockquote>
+</li>
+<li>
+<p>Hugo 프로젝트 만들기</p>
+<blockquote>
+<p>hugo new site 프로젝트 이름</p>
+</blockquote>
+</li>
+<li>
+<p>Git remote</p>
+<blockquote>
+<p>git init<br>
+git remote add origin &lt;첫번째 repo url&gt;<br>
+git submodule add -b master &lt;두번째 repo url&gt; public</p>
+</blockquote>
+</li>
+<li>
+<p>Git subdirectory</p>
+</li>
+<li>
+<p>Hugo server 다루는 법</p>
+</li>
+</ol>
+<p>출처 : <a href="https://medium.com/@bjs1616/hugo%EC%99%80-github-page%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-9eb1a5b50d91">hugo와 github page를 이용한 블로그 만들기</a></p>
+<h4 id="hugo-새로운-글-쓰기">Hugo 새로운 글 쓰기</h4>
+<pre><code>&gt; hugo new 파일이름.md
+&gt; hugo server -D
+&gt; draft = true 지우기
+&gt; hugo
+&gt; cd public
+&gt; git add .
+&gt; git commit -m &quot;커밋 메세지&quot;
+&gt; git push origin master
+&gt; cd ..
+&gt; git add .
+&gt; git commit -m &quot;커밋 메세지&quot;
+&gt; git push origin master
+</code></pre>
+<h3 id="2-hugo-커스터마이징">2. Hugo 커스터마이징</h3>
+<p>출처 : <a href="https://zzossig.io/posts/hugo/theme_customizing/">휴고 테마 커스터마이징 하기</a></p>
+<h3 id="3-마크다운">3. 마크다운</h3>
+<p>출처 : <a href="https://gist.github.com/ihoneymon/652be052a0727ad59601">마크다운 markdown 작성법</a></p>
+<p>코드블럭 사용하는 법</p>
+<pre><code>import pandas as pd
+</code></pre>
 
-
-
-<ul>
-	
-</ul>
-
-
-<footer class=" footline" >
+<footer class="footline">
 	
 </footer>
 
@@ -279,8 +344,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -294,6 +357,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -310,6 +376,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -334,8 +401,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/post/next-step/" title="Next Step"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/post/" title="Posts" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/post/next-step/" title="Next Step" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -367,3 +436,4 @@
 
   </body>
 </html>
+

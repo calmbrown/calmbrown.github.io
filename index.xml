@@ -6,31 +6,22 @@
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 Jan 2021 18:02:40 +0900</lastBuildDate><atom:link href="http://calmbrown.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Testing3</title>
-      <link>http://calmbrown.github.io/post/testing3/</link>
-      <pubDate>Thu, 07 Jan 2021 18:02:40 +0900</pubDate>
-      
-      <guid>http://calmbrown.github.io/post/testing3/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Wed, 06 Jan 2021 15:55:26 +0900</lastBuildDate><atom:link href="http://calmbrown.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Next Step</title>
-      <link>http://calmbrown.github.io/post/testing2/</link>
+      <link>http://calmbrown.github.io/post/next-step/</link>
       <pubDate>Wed, 06 Jan 2021 15:55:26 +0900</pubDate>
       
-      <guid>http://calmbrown.github.io/post/testing2/</guid>
+      <guid>http://calmbrown.github.io/post/next-step/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hugo 사용기</title>
-      <link>http://calmbrown.github.io/post/testing/</link>
+      <link>http://calmbrown.github.io/post/blog-create/</link>
       <pubDate>Wed, 06 Jan 2021 13:46:13 +0900</pubDate>
       
-      <guid>http://calmbrown.github.io/post/testing/</guid>
+      <guid>http://calmbrown.github.io/post/blog-create/</guid>
       <description>1. Hugo 와 Github를 이용한 블로그 만들기   Git 설치
  https://git-scm.com/
    Hugo 설치
