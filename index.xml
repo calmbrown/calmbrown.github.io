@@ -17,7 +17,7 @@
     </item>
     
     <item>
-      <title>Testing2</title>
+      <title>Next Step</title>
       <link>http://calmbrown.github.io/post/testing2/</link>
       <pubDate>Wed, 06 Jan 2021 15:55:26 +0900</pubDate>
       
@@ -26,12 +26,25 @@
     </item>
     
     <item>
-      <title>Testing</title>
+      <title>Hugo 사용기</title>
       <link>http://calmbrown.github.io/post/testing/</link>
       <pubDate>Wed, 06 Jan 2021 13:46:13 +0900</pubDate>
       
       <guid>http://calmbrown.github.io/post/testing/</guid>
-      <description></description>
+      <description>1. Hugo 와 Github를 이용한 블로그 만들기   Git 설치
+ https://git-scm.com/
+   Hugo 설치
+ https://github.com/gohugoio/hugo/releases
+환경변수 설정
+   Hugo 프로젝트 만들기
+ hugo new site 프로젝트 이름
+   Git remote
+ git init
+git remote add origin &amp;lt;첫번째 repo url&amp;gt;
+git submodule add -b master &amp;lt;두번째 repo url&amp;gt; public
+   Git subdirectory
+  Hugo server 다루는 법
+  출처 : hugo와 github page를 이용한 블로그 만들기</description>
     </item>
     
   </channel>
