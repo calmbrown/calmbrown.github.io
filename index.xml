@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>http://calmbrown.github.io/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 06 Jan 2021 15:55:26 +0900</lastBuildDate><atom:link href="http://calmbrown.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Next Step</title>
+      <link>http://calmbrown.github.io/post/next-step/</link>
+      <pubDate>Wed, 06 Jan 2021 15:55:26 +0900</pubDate>
+      
+      <guid>http://calmbrown.github.io/post/next-step/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo 사용기</title>
+      <link>http://calmbrown.github.io/post/blog-create/</link>
+      <pubDate>Wed, 06 Jan 2021 13:46:13 +0900</pubDate>
+      
+      <guid>http://calmbrown.github.io/post/blog-create/</guid>
+      <description>1. Hugo 와 Github를 이용한 블로그 만들기   Git 설치
+ https://git-scm.com/
+   Hugo 설치
+ https://github.com/gohugoio/hugo/releases
+환경변수 설정
+   Hugo 프로젝트 만들기
+ hugo new site 프로젝트 이름
+   Git remote
+ git init
+git remote add origin &amp;lt;첫번째 repo url&amp;gt;
+git submodule add -b master &amp;lt;두번째 repo url&amp;gt; public
+   Git subdirectory
+  Hugo server 다루는 법
+  출처 : hugo와 github page를 이용한 블로그 만들기</description>
+    </item>
+    
+  </channel>
+</rss>
