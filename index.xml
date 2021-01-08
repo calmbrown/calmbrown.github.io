@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
+    <title>Homepage on My New Hugo Site</title>
     <link>http://calmbrown.github.io/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <description>Recent content in Homepage on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 06 Jan 2021 15:55:26 +0900</lastBuildDate><atom:link href="http://calmbrown.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Test</title>
-      <link>http://calmbrown.github.io/test/</link>
-      <pubDate>Fri, 08 Jan 2021 17:22:39 +0900</pubDate>
-      
-      <guid>http://calmbrown.github.io/test/</guid>
-      <description></description>
-    </item>
-    
     <item>
       <title>Next Step</title>
       <link>http://calmbrown.github.io/post/next-step/</link>
