@@ -1,0 +1,22 @@
+[
+{
+	"uri": "https://calmbrown.github.io/",
+	"title": "Introduction",
+	"tags": [],
+	"description": "",
+	"content": "Acerbo datus maxime Astris ipse furtiva Est in vagis et Pittheus tu arge accipiter regia iram vocatur nurus. Omnes ut olivae sensit arma sorori deducit, inesset crudus, ego vetuere aliis, modo arsit? Utinam rapta fiducia valuere litora adicit cursu, ad facies\r\rSuis quot vota Ea furtique risere fratres edidit terrae magis. Colla tam mihi tenebat: miseram excita suadent es pecudes iam. Concilio quam velatus posset ait quod nunc! Fragosis suae dextra geruntur functus vulgata.\r\r Tempora nisi nunc Lorem markdownum emicat gestu. Cannis sol pressit ducta. Est Idaei, tremens ausim se tutaeque, illi ulnis hausit, sed, lumina cutem. Quae avis sequens!\nvar panel = ram_design;\rif (backup + system) {\rfile.readPoint = network_native;\rsidebar_engine_device(cell_tftp_raster,\rdual_login_paper.adf_vci.application_reader_design(\rgraphicsNvramCdma, lpi_footer_snmp, integer_model));\r}\r Locis suis novi cum suoque decidit eadem Idmoniae ripis, at aves, ali missa adest, ut et autem, et ab?\n"
+},
+{
+	"uri": "https://calmbrown.github.io/post/next-step/",
+	"title": "Next Step",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://calmbrown.github.io/post/blog-create/",
+	"title": "Hugo 사용기",
+	"tags": [],
+	"description": "",
+	"content": "1. Hugo 와 Github를 이용한 블로그 만들기   Git 설치\n https://git-scm.com/\n   Hugo 설치\n https://github.com/gohugoio/hugo/releases\n환경변수 설정\n   Hugo 프로젝트 만들기\n hugo new site 프로젝트 이름\n   Git remote\n git init\ngit remote add origin \u0026lt;첫번째 repo url\u0026gt;\ngit submodule add -b master \u0026lt;두번째 repo url\u0026gt; public\n   Git subdirectory\n  Hugo server 다루는 법\n  출처 : hugo와 github page를 이용한 블로그 만들기\nHugo 새로운 글 쓰기 \u0026gt; hugo new 파일이름.md\r\u0026gt; hugo server -D\r\u0026gt; draft = true 지우기\r\u0026gt; hugo\r\u0026gt; cd public\r\u0026gt; git add .\r\u0026gt; git commit -m \u0026quot;커밋 메세지\u0026quot;\r\u0026gt; git push origin master\r\u0026gt; cd ..\r\u0026gt; git add .\r\u0026gt; git commit -m \u0026quot;커밋 메세지\u0026quot;\r\u0026gt; git push origin master\r 2. Hugo 커스터마이징 출처 : 휴고 테마 커스터마이징 하기\n3. 마크다운 출처 : 마크다운 markdown 작성법\n코드블럭 사용하는 법\nimport pandas as pd "
+}]
