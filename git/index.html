@@ -4,16 +4,16 @@
 <html>
   <head>
     <title>
-	Git :: DocPort Documentation
+	Git :: Calmbrown
 </title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2021-01-09T18:59:47 KST">
+<meta name="revised" content="2021-01-09T21:10:08 KST">
 <meta name="description" content="">
 
 
 
-<title>Git :: DocPort Documentation</title>
+<title>Git :: Calmbrown</title>
 
 <link rel="shortcut icon" href='/images/favicon.png' type="image/x-icon" />
 
@@ -108,7 +108,7 @@ if (!doNotTrack) {
 	
 			
 		
-	    	<a class='baselink' href='https://calmbrown.github.io/'>DocPort Documentation</a>
+	    	<a class='baselink' href='https://calmbrown.github.io/'>Calmbrown</a>
 	  	
 	</div>
     <nav class="shortcuts">
@@ -291,7 +291,15 @@ if (!doNotTrack) {
   			
   			<i style=";" class="fas fa-chevron-right"></i>
 		</span>
-		<nav id="TableOfContents"></nav>
+		<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#git-원격remote으로-관리하기">Git 원격(remote)으로 관리하기</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 	</div>
 	
 	
@@ -302,19 +310,55 @@ if (!doNotTrack) {
 
 
 	<div class="content">
-	    <p>Git remote 설정 방법( + 서브 모듈-디렉토리 설정 )</p>
-<p>우선 origin으로 설정할 디렉토리를 만든다.</p>
-<p>참고 : 서브 디렉토리는 submodule 명령어 입력하면 자동으로 생긴다.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-shell" data-lang="shell">cd <span style="color:#f92672">[</span>git 동기화할 디렉토리<span style="color:#f92672">]</span>
-git init
-git remote add orgin <span style="color:#f92672">[</span>orign repo url<span style="color:#f92672">]</span>   
-git submodule add -b master <span style="color:#f92672">[</span>sub repo url<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>sub directory<span style="color:#f92672">]</span>   
+	    <ul>
+<li>
+<h3 ref="git-원격remote으로-관리하기" >Git 원격(remote)으로 관리하기</h3><a class="anchor" id="git-원격remote으로-관리하기"></a>
+</li>
+</ul>
+<hr>
+<p>Git은 소스코드를 효과적으로 관리하기 위해 개발된 &lsquo;분산형 버전 관리 시스템&rsquo;이다.
+우리는 이 Git을 이용기위해 가장먼저, Git 홈페이지에서 저장소(repository)를 만들고 이를 로컬에서 원격으로 관리한다.</p>
+<p>본 포스팅에서는 Git의 설치와 repository 추가 구성이 완료되었다는 가정하에, git 저장소(repository)를 로컬에서 원격으로 관리하고 그 서브모듈(submodule) 까지 관리하는 것을 설명한다.</p>
+<h4 ref="1-git-remote-설정" >1. Git remote 설정</h4><a class="anchor" id="1-git-remote-설정"></a>
+<ol>
+<li>origin 으로 설정할 directory 및 repository를 선정. ( repository 없을 경우 github 에서 생성할 것.)</li>
+<li>origin 하위에 생성할 submodule의 directory 및 repository를 선정.</li>
+<li>origin directory로 이동하며 아래와 같은 명령어를 실행한다.</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># origin directory로 이동</span>
+cd <span style="color:#f92672">[</span>origin 디렉토리<span style="color:#f92672">]</span> 
+
+<span style="color:#75715e"># git 초기화</span>
+git init 
+
+<span style="color:#75715e"># origin repo url로 연결. url은 github에 생성한 repo에서 복사 가능</span>
+git remote add orgin <span style="color:#f92672">[</span>orign repo url<span style="color:#f92672">]</span> 
+
+<span style="color:#75715e"># submodule 추가 명령어.</span>
+git submodule add -b master <span style="color:#f92672">[</span>sub repo url<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>sub directory<span style="color:#f92672">]</span> 
+
+<span style="color:#75715e"># 수정한 파일들 추가</span>
 git add .   
+
+<span style="color:#75715e"># 위에서 add 로 추가한 내용, 메시지와 함께 commit </span>
 git commit -m <span style="color:#e6db74">&#34;example message&#34;</span>
+
+<span style="color:#75715e"># commit 한 내용 push</span>
 git push origin master
-</code></pre></div><p>위에서 orign이 이미 있다고 에러가 날때, 아래 명령어로 origin을 제거하고 추가한다.</p>
+</code></pre></div><p>참고 : 서브 디렉토리는 submodule 명령어 입력하면 자동으로 생긴다.</p>
+<p>위에서 orign이 이미 있다고 에러가 날때, 아래 명령어로 기존의 origin을 제거하고 추가한다.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-shell" data-lang="shell">git remote rm origin
-</code></pre></div>
+</code></pre></div><h5 ref="submodule-제거-방법" >submodule 제거 방법</h5><a class="anchor" id="submodule-제거-방법"></a>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># submodule 을 origin에서 제거</span>
+git submodule deinit -f example-submodule-directory
+
+<span style="color:#75715e"># local git module 제거</span>
+rm -rf .git/modules/example-submodule-directory
+
+<span style="color:#75715e"># local 에서 제거</span>
+git rm -f example-submodule-directory
+</code></pre></div><h4 ref="2-git-clone" >2. Git clone</h4><a class="anchor" id="2-git-clone"></a>
+
 		<script src="https://utteranc.es/client.js"
 			repo="calmbrown/blog-comment"
 			issue-term="pathname"
@@ -362,7 +406,15 @@ git push origin master
             <li><a href="/git/">Git</a></li>
         </ul>
     </nav>
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#git-원격remote으로-관리하기">Git 원격(remote)으로 관리하기</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 </div>
 
 		

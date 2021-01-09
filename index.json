@@ -1,10 +1,17 @@
-[,
+[
+{
+	"uri": "https://calmbrown.github.io/",
+	"title": "calmbrown",
+	"tags": [],
+	"description": "",
+	"content": "👨‍💻 Languages  Python   🕶 Interest  Cloud Architect AWS Go Python  "
+},
 {
 	"uri": "https://calmbrown.github.io/git/",
 	"title": "Git",
-	"tags": [],
+	"tags": ["hugo", "content", "static site generator"],
 	"description": "",
-	"content": "Git remote 설정 방법( + 서브 모듈-디렉토리 설정 )\n우선 origin으로 설정할 디렉토리를 만든다.\n참고 : 서브 디렉토리는 submodule 명령어 입력하면 자동으로 생긴다.\ncd [git 동기화할 디렉토리] git init git remote add orgin [orign repo url] git submodule add -b master [sub repo url] [sub directory] git add . git commit -m \u0026#34;example message\u0026#34; git push origin master 위에서 orign이 이미 있다고 에러가 날때, 아래 명령어로 origin을 제거하고 추가한다.\ngit remote rm origin "
+	"content": "  Git 원격(remote)으로 관리하기    Git은 소스코드를 효과적으로 관리하기 위해 개발된 \u0026lsquo;분산형 버전 관리 시스템\u0026rsquo;이다. 우리는 이 Git을 이용기위해 가장먼저, Git 홈페이지에서 저장소(repository)를 만들고 이를 로컬에서 원격으로 관리한다.\n본 포스팅에서는 Git의 설치와 repository 추가 구성이 완료되었다는 가정하에, git 저장소(repository)를 로컬에서 원격으로 관리하고 그 서브모듈(submodule) 까지 관리하는 것을 설명한다.\n1. Git remote 설정  origin 으로 설정할 directory 및 repository를 선정. ( repository 없을 경우 github 에서 생성할 것.) origin 하위에 생성할 submodule의 directory 및 repository를 선정. origin directory로 이동하며 아래와 같은 명령어를 실행한다.  # origin directory로 이동 cd [origin 디렉토리] # git 초기화 git init # origin repo url로 연결. url은 github에 생성한 repo에서 복사 가능 git remote add orgin [orign repo url] # submodule 추가 명령어. git submodule add -b master [sub repo url] [sub directory] # 수정한 파일들 추가 git add . # 위에서 add 로 추가한 내용, 메시지와 함께 commit  git commit -m \u0026#34;example message\u0026#34; # commit 한 내용 push git push origin master 참고 : 서브 디렉토리는 submodule 명령어 입력하면 자동으로 생긴다.\n위에서 orign이 이미 있다고 에러가 날때, 아래 명령어로 기존의 origin을 제거하고 추가한다.\ngit remote rm origin submodule 제거 방법 # submodule 을 origin에서 제거 git submodule deinit -f example-submodule-directory # local git module 제거 rm -rf .git/modules/example-submodule-directory # local 에서 제거 git rm -f example-submodule-directory 2. Git clone "
 },
 {
 	"uri": "https://calmbrown.github.io/hugo-init/",
