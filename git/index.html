@@ -8,7 +8,7 @@
 </title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2021-01-09T21:10:08 KST">
+<meta name="revised" content="2021-01-09T21:58:31 KST">
 <meta name="description" content="">
 
 
@@ -293,11 +293,13 @@ if (!doNotTrack) {
 		</span>
 		<nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#git-원격remote으로-관리하기">Git 원격(remote)으로 관리하기</a>
       <ul>
-        <li><a href="#git-원격remote으로-관리하기">Git 원격(remote)으로 관리하기</a></li>
+        <li><a href="#1-git-remote-설정">1. Git remote 설정</a></li>
       </ul>
     </li>
+    <li><a href="#2-git-clone">2. Git clone</a></li>
+    <li><a href="#br-"><br /></a></li>
   </ul>
 </nav>
 	</div>
@@ -312,19 +314,27 @@ if (!doNotTrack) {
 	<div class="content">
 	    <ul>
 <li>
-<h3 ref="git-원격remote으로-관리하기" >Git 원격(remote)으로 관리하기</h3><a class="anchor" id="git-원격remote으로-관리하기"></a>
+<h2 ref="git-원격remote으로-관리하기" >Git 원격(remote)으로 관리하기</h2><a class="anchor" id="git-원격remote으로-관리하기"></a>
 </li>
 </ul>
 <hr>
-<p>Git은 소스코드를 효과적으로 관리하기 위해 개발된 &lsquo;분산형 버전 관리 시스템&rsquo;이다.
+<p>  Git은 소스코드를 효과적으로 관리하기 위해 개발된 &lsquo;분산형 버전 관리 시스템&rsquo;이다.
 우리는 이 Git을 이용기위해 가장먼저, Git 홈페이지에서 저장소(repository)를 만들고 이를 로컬에서 원격으로 관리한다.</p>
-<p>본 포스팅에서는 Git의 설치와 repository 추가 구성이 완료되었다는 가정하에, git 저장소(repository)를 로컬에서 원격으로 관리하고 그 서브모듈(submodule) 까지 관리하는 것을 설명한다.</p>
-<h4 ref="1-git-remote-설정" >1. Git remote 설정</h4><a class="anchor" id="1-git-remote-설정"></a>
+<p>  본 포스팅에서는 Git의 설치와 repository 가 github에 구성이 완료되었다는 가정하에, git 저장소(repository)를 로컬에서 원격으로 관리하고 그 서브모듈(submodule) 까지 관리하는 것을 설명한다.</p>
+<p><br /></p>
+<h3 ref="1-git-remote-설정" >1. Git remote 설정</h3><a class="anchor" id="1-git-remote-설정"></a>
 <ol>
 <li>origin 으로 설정할 directory 및 repository를 선정. ( repository 없을 경우 github 에서 생성할 것.)</li>
 <li>origin 하위에 생성할 submodule의 directory 및 repository를 선정.</li>
 <li>origin directory로 이동하며 아래와 같은 명령어를 실행한다.</li>
 </ol>
+<ul>
+<li>submodule 이란?<br>
+  submodule 이란 origin repo에서 다른 repo를 하위 모듈로 갖을 때 지정하는 방식이다.
+git은 기본적으로 repo 밑에 repo, 즉 하위 repo를 두지 못한다. (origin은 반드시 하나이다.)
+submodule 은 이를 가능하게 하기위해, 먼저 origin repo를 지정하고 이후에 submodule 명령어로 하위 repo를 지정하는 방식이다.
+그 방법은 아래와 같다.</li>
+</ul>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># origin directory로 이동</span>
 cd <span style="color:#f92672">[</span>origin 디렉토리<span style="color:#f92672">]</span> 
 
@@ -343,12 +353,16 @@ git add .
 <span style="color:#75715e"># 위에서 add 로 추가한 내용, 메시지와 함께 commit </span>
 git commit -m <span style="color:#e6db74">&#34;example message&#34;</span>
 
-<span style="color:#75715e"># commit 한 내용 push</span>
+<span style="color:#75715e"># commit 한 내용 push. master는 branch 이름</span>
 git push origin master
-</code></pre></div><p>참고 : 서브 디렉토리는 submodule 명령어 입력하면 자동으로 생긴다.</p>
-<p>위에서 orign이 이미 있다고 에러가 날때, 아래 명령어로 기존의 origin을 제거하고 추가한다.</p>
+</code></pre></div><p><br /></p>
+<h4 ref="추가-참고사항" >추가 참고사항</h4><a class="anchor" id="추가-참고사항"></a>
+<hr>
+<p>  서브 디렉토리는 submodule 명령어 입력하면 자동으로 생긴다.</p>
+<p>  git remote 설정 시 orign이 이미 있다고 에러가 날때, 아래 명령어로 기존의 origin을 제거한다.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-shell" data-lang="shell">git remote rm origin
-</code></pre></div><h5 ref="submodule-제거-방법" >submodule 제거 방법</h5><a class="anchor" id="submodule-제거-방법"></a>
+</code></pre></div><p><br /></p>
+<h5 ref="submodule-제거-방법" >submodule 제거 방법</h5><a class="anchor" id="submodule-제거-방법"></a>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># submodule 을 origin에서 제거</span>
 git submodule deinit -f example-submodule-directory
 
@@ -357,7 +371,12 @@ rm -rf .git/modules/example-submodule-directory
 
 <span style="color:#75715e"># local 에서 제거</span>
 git rm -f example-submodule-directory
-</code></pre></div><h4 ref="2-git-clone" >2. Git clone</h4><a class="anchor" id="2-git-clone"></a>
+</code></pre></div><p><br /></p>
+<h2 ref="2-git-clone" >2. Git clone</h2><a class="anchor" id="2-git-clone"></a>
+<hr>
+<p>  다양한 git 소스들을 가져다 쓸때, 보통 git clone이라는 명령어를 이용해 가져온다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-shell" data-lang="shell">git clone <span style="color:#f92672">[</span>target repo url<span style="color:#f92672">]</span> 
+</code></pre></div><h2 ref="br-" ><br /></h2><a class="anchor" id="br-"></a>
 
 		<script src="https://utteranc.es/client.js"
 			repo="calmbrown/blog-comment"
@@ -408,11 +427,13 @@ git rm -f example-submodule-directory
     </nav>
     <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#git-원격remote으로-관리하기">Git 원격(remote)으로 관리하기</a>
       <ul>
-        <li><a href="#git-원격remote으로-관리하기">Git 원격(remote)으로 관리하기</a></li>
+        <li><a href="#1-git-remote-설정">1. Git remote 설정</a></li>
       </ul>
     </li>
+    <li><a href="#2-git-clone">2. Git clone</a></li>
+    <li><a href="#br-"><br /></a></li>
   </ul>
 </nav>
 </div>
