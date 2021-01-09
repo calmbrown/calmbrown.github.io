@@ -1,52 +1,10 @@
 [,
 {
-	"uri": "https://calmbrown.github.io/vscode/",
-	"title": "Vscode",
-	"tags": [],
-	"description": "",
-	"content": "유용한 기능들이 모션 이미지와 함께 잘 성명되어있다.\n링크 : 비주얼 스튜디오 코드의 11가지 유용한 기능\n"
-},
-{
-	"uri": "https://calmbrown.github.io/go/",
-	"title": "Go",
-	"tags": [],
-	"description": "",
-	"content": "Go 언어는 공부 시작 단계에 있다. Go 언어와 사실상 관계없게 되었지만, 이로 인해 Go 언어 기반인 hugo 기반 블로그 까지 운영하게 되었다.\n"
-},
-{
 	"uri": "https://calmbrown.github.io/git/",
 	"title": "Git",
 	"tags": [],
 	"description": "",
 	"content": "Git remote 설정 방법( + 서브 모듈-디렉토리 설정 )\n우선 origin으로 설정할 디렉토리를 만든다.\n참고 : 서브 디렉토리는 submodule 명령어 입력하면 자동으로 생긴다.\ncd [git 동기화할 디렉토리] git init git remote add orgin [orign repo url] git submodule add -b master [sub repo url] [sub directory] git add . git commit -m \u0026#34;example message\u0026#34; git push origin master 위에서 orign이 이미 있다고 에러가 날때, 아래 명령어로 origin을 제거하고 추가한다.\ngit remote rm origin "
-},
-{
-	"uri": "https://calmbrown.github.io/docker/",
-	"title": "Docker",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "https://calmbrown.github.io/aws/lambda/",
-	"title": "Lambda",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "https://calmbrown.github.io/aws/boto3/",
-	"title": "Boto3",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "https://calmbrown.github.io/aws/",
-	"title": "AWS",
-	"tags": [],
-	"description": "",
-	"content": "AWS 전반의 기술 들을 기록한다. "
 },
 {
 	"uri": "https://calmbrown.github.io/hugo-init/",
@@ -56,23 +14,9 @@
 	"content": "hugo blog 구축기 hugo 설치 Est in vagis et Pittheus tu arge accipiter regia iram vocatur nurus. Omnes ut olivae sensit arma sorori deducit, inesset crudus, ego vetuere aliis, modo arsit? Utinam rapta fiducia valuere litora adicit cursu, ad facies\r\rgit 설치 Ea furtique risere fratres edidit terrae magis. Colla tam mihi tenebat: miseram excita suadent es pecudes iam. Concilio quam velatus posset ait quod nunc! Fragosis suae dextra geruntur functus vulgata.\r\r Tempora nisi nunc Lorem markdownum emicat gestu. Cannis sol pressit ducta. Est Idaei, tremens ausim se tutaeque, illi ulnis hausit, sed, lumina cutem. Quae avis sequens!\nvar panel = ram_design; if (backup + system) { file.readPoint = network_native; sidebar_engine_device(cell_tftp_raster, dual_login_paper.adf_vci.application_reader_design( graphicsNvramCdma, lpi_footer_snmp, integer_model)); } Locis suis novi cum suoque decidit eadem Idmoniae ripis, at aves, ali missa adest, ut et autem, et ab?\n"
 },
 {
-	"uri": "https://calmbrown.github.io/hugo-init/next-step/",
-	"title": "Next Step",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "https://calmbrown.github.io/hugo-init/hugo-create/",
 	"title": "Hugo 사용기",
 	"tags": [],
 	"description": "",
 	"content": "1. Hugo 와 Github를 이용한 블로그 만들기   Git 설치\n링크 : 깃 허브 홈페이지\n  Hugo 설치\n https://github.com/gohugoio/hugo/releases\n환경변수 설정\n   Hugo 프로젝트 만들기\n hugo new site 프로젝트 이름\n   Git remote\n git init\ngit remote add origin \u0026lt;첫번째 repo url\u0026gt;\ngit submodule add -b master \u0026lt;두번째 repo url\u0026gt; public\n   Git subdirectory\n  Hugo server 다루는 법\n  출처 : hugo와 github page를 이용한 블로그 만들기\nHugo 새로운 글 쓰기 hugo new 파일이름.md hugo server -D draft = true 지우기 hugo cd public git add . git commit -m \u0026#34;커밋 메세지\u0026#34; git push origin master cd .. git add . git commit -m \u0026#34;커밋 메세지\u0026#34; git push origin master 2. Hugo 커스터마이징 출처 : 휴고 테마 커스터마이징 하기\n3. 마크다운 출처 : 마크다운 markdown 작성법\n코드블럭 사용하는 법\nimport pandas as pd "
-},
-{
-	"uri": "https://calmbrown.github.io/linux/",
-	"title": "Linux",
-	"tags": [],
-	"description": "",
-	"content": "기본 명령어 "
 }]

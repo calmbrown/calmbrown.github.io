@@ -4,17 +4,7 @@
   
   <url>
     <loc>https://calmbrown.github.io/</loc>
-    <lastmod>2021-01-09T11:09:03+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://calmbrown.github.io/vscode/</loc>
-    <lastmod>2021-01-09T11:09:03+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://calmbrown.github.io/go/</loc>
-    <lastmod>2021-01-09T09:46:24+09:00</lastmod>
+    <lastmod>2021-01-09T09:46:11+09:00</lastmod>
   </url>
   
   <url>
@@ -23,42 +13,13 @@
   </url>
   
   <url>
-    <loc>https://calmbrown.github.io/docker/</loc>
-    <lastmod>2021-01-09T09:46:03+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://calmbrown.github.io/aws/lambda/</loc>
-    <lastmod>2021-01-09T09:45:32+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://calmbrown.github.io/aws/boto3/</loc>
-    <lastmod>2021-01-09T09:45:16+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://calmbrown.github.io/aws/</loc>
-    <lastmod>2021-01-09T09:43:37+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://calmbrown.github.io/hugo-init/</loc>
-    <lastmod>2021-01-06T15:55:26+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://calmbrown.github.io/hugo-init/next-step/</loc>
-    <lastmod>2021-01-06T15:55:26+09:00</lastmod>
+    <lastmod>2021-01-06T13:46:13+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://calmbrown.github.io/hugo-init/hugo-create/</loc>
     <lastmod>2021-01-06T13:46:13+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://calmbrown.github.io/linux/</loc>
   </url>
   
 </urlset>
