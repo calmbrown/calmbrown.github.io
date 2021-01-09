@@ -8,18 +8,22 @@
   </url>
   
   <url>
-    <loc>https://calmbrown.github.io/post/next-step/</loc>
+    <loc>https://calmbrown.github.io/hugo-init/</loc>
     <lastmod>2021-01-06T15:55:26+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://calmbrown.github.io/post/</loc>
+    <loc>https://calmbrown.github.io/hugo-init/next-step/</loc>
     <lastmod>2021-01-06T15:55:26+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://calmbrown.github.io/post/blog-create/</loc>
+    <loc>https://calmbrown.github.io/hugo-init/hugo-create/</loc>
     <lastmod>2021-01-06T13:46:13+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://calmbrown.github.io/linux/</loc>
   </url>
   
 </urlset>
