@@ -4,16 +4,16 @@
 <html>
   <head>
     <title>
-	Hugo 사용기 :: DocPort Documentation
+	AWS :: DocPort Documentation
 </title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2021-01-09T10:37:58 KST">
+<meta name="revised" content="2021-01-09T10:37:57 KST">
 <meta name="description" content="">
 
 
 
-<title>Hugo 사용기 :: DocPort Documentation</title>
+<title>AWS :: DocPort Documentation</title>
 
 <link rel="shortcut icon" href='/images/favicon.png' type="image/x-icon" />
 
@@ -50,7 +50,7 @@
     
   </head>
 
-  <body data-url="/hugo-init/hugo-create/"
+  <body data-url="/aws/"
 
   class="">
 
@@ -203,14 +203,15 @@
     </li>
     
 
-    <li data-nav-id="https://calmbrown.github.io/aws/" class="dd-item haschildren
+    <li data-nav-id="https://calmbrown.github.io/aws/" class="dd-item parent active haschildren
         item_level_$level
         ">
 
       
       
       
-      <i class="fas fa-chevron-right ddexp"></i>
+      
+          <i class="fas fa-chevron-down ddexp"></i>
         
       
           <a href="/aws/">AWS</a>
@@ -250,15 +251,14 @@
     </li>
     
 
-    <li data-nav-id="https://calmbrown.github.io/hugo-init/" class="dd-item parent haschildren
+    <li data-nav-id="https://calmbrown.github.io/hugo-init/" class="dd-item haschildren
         item_level_$level
         ">
 
       
       
       
-      
-          <i class="fas fa-chevron-down ddexp"></i>
+      <i class="fas fa-chevron-right ddexp"></i>
         
       
           <a href="/hugo-init/">Hugo</a>
@@ -281,7 +281,7 @@
     </li>
               
 
-    <li data-nav-id="https://calmbrown.github.io/hugo-init/hugo-create/" class="dd-item parent active
+    <li data-nav-id="https://calmbrown.github.io/hugo-init/hugo-create/" class="dd-item
         item_level_$level
         ">
 
@@ -338,9 +338,6 @@
         
   
   	
-		
-  
-  	
 	<li >
       <a class="text-link" href="https://calmbrown.github.io/">
         
@@ -348,17 +345,9 @@
     </li>
 	
   
-    <li class="">
-      <a class="text-link" href="/hugo-init/">
-        Hugo
-      </a>
-    </li>
-	
-  	
-  
     <li class="active">
       
-        Hugo 사용기
+        AWS
       
     </li>
 
@@ -379,7 +368,7 @@
 		
 
 		
-			<h1>Hugo 사용기</h1>
+			<h1>AWS</h1>
         
 
 		
@@ -401,9 +390,7 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#1-hugo-와-github를-이용한-블로그-만들기">1. Hugo 와 Github를 이용한 블로그 만들기</a></li>
-        <li><a href="#2-hugo-커스터마이징">2. Hugo 커스터마이징</a></li>
-        <li><a href="#3-마크다운">3. 마크다운</a></li>
+        <li><a href="#aws-전반의-기술-들을-기록한다">AWS 전반의 기술 들을 기록한다.</a></li>
       </ul>
     </li>
   </ul>
@@ -418,61 +405,8 @@
 
 
 	<div class="content">
-	    <h3 ref="1-hugo-와-github를-이용한-블로그-만들기" >1. Hugo 와 Github를 이용한 블로그 만들기</h3><a class="anchor" id="1-hugo-와-github를-이용한-블로그-만들기"></a>
-<ol>
-<li>
-<p>Git 설치</p>
-<p>링크 : <a href="https://git-scm.com/">깃 허브 홈페이지</a></p>
-</li>
-<li>
-<p>Hugo 설치</p>
-<blockquote>
-<p><a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a><br>
-환경변수 설정</p>
-</blockquote>
-</li>
-<li>
-<p>Hugo 프로젝트 만들기</p>
-<blockquote>
-<p>hugo new site 프로젝트 이름</p>
-</blockquote>
-</li>
-<li>
-<p>Git remote</p>
-<blockquote>
-<p>git init<br>
-git remote add origin &lt;첫번째 repo url&gt;<br>
-git submodule add -b master &lt;두번째 repo url&gt; public</p>
-</blockquote>
-</li>
-<li>
-<p>Git subdirectory</p>
-</li>
-<li>
-<p>Hugo server 다루는 법</p>
-</li>
-</ol>
-<p>출처 : <a href="https://medium.com/@bjs1616/hugo%EC%99%80-github-page%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-9eb1a5b50d91">hugo와 github page를 이용한 블로그 만들기</a></p>
-<h4 ref="hugo-새로운-글-쓰기" >Hugo 새로운 글 쓰기</h4><a class="anchor" id="hugo-새로운-글-쓰기"></a>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-shell" data-lang="shell">    hugo new 파일이름.md
-    hugo server -D
-    draft <span style="color:#f92672">=</span> true 지우기
-    hugo
-    cd public
-    git add .
-    git commit -m <span style="color:#e6db74">&#34;커밋 메세지&#34;</span>
-    git push origin master
-    cd ..   
-    git add .
-    git commit -m <span style="color:#e6db74">&#34;커밋 메세지&#34;</span>
-    git push origin master
-</code></pre></div><h3 ref="2-hugo-커스터마이징" >2. Hugo 커스터마이징</h3><a class="anchor" id="2-hugo-커스터마이징"></a>
-<p>출처 : <a href="https://zzossig.io/posts/hugo/theme_customizing/">휴고 테마 커스터마이징 하기</a></p>
-<h3 ref="3-마크다운" >3. 마크다운</h3><a class="anchor" id="3-마크다운"></a>
-<p>출처 : <a href="https://gist.github.com/ihoneymon/652be052a0727ad59601">마크다운 markdown 작성법</a></p>
-<p>코드블럭 사용하는 법</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
-</code></pre></div>
+	    <h3 ref="aws-전반의-기술-들을-기록한다" >AWS 전반의 기술 들을 기록한다.</h3><a class="anchor" id="aws-전반의-기술-들을-기록한다"></a>
+
 		<script src="https://utteranc.es/client.js"
 			repo="calmbrown/blog-comment"
 			issue-term="pathname"
@@ -489,10 +423,10 @@ git submodule add -b master &lt;두번째 repo url&gt; public</p>
 
 	 
 	<div class="chevrons">
-		<a class="next" href="/linux/" title="Linux" style="margin-right: 0px;">
+		<a class="next" href="/aws/lambda/" title="Lambda" style="margin-right: 0px;">
             <div>
                 <p></p>
-                <label>Linux</label>
+                <label>Lambda</label>
             </div>
             <i class="fas fa-arrow-right" style="font-size: 1.7em"></i></a>
 	</div>
@@ -517,16 +451,14 @@ git submodule add -b master &lt;두번째 repo url&gt; public</p>
     <label><i class="fas fa-align-right"></i>&nbsp;&nbsp;</label>
     <nav>
         <ul >
-            <li><a href="/hugo-init/hugo-create/">Hugo 사용기</a></li>
+            <li><a href="/aws/">AWS</a></li>
         </ul>
     </nav>
     <nav id="TableOfContents">
   <ul>
     <li>
       <ul>
-        <li><a href="#1-hugo-와-github를-이용한-블로그-만들기">1. Hugo 와 Github를 이용한 블로그 만들기</a></li>
-        <li><a href="#2-hugo-커스터마이징">2. Hugo 커스터마이징</a></li>
-        <li><a href="#3-마크다운">3. 마크다운</a></li>
+        <li><a href="#aws-전반의-기술-들을-기록한다">AWS 전반의 기술 들을 기록한다.</a></li>
       </ul>
     </li>
   </ul>
@@ -548,7 +480,7 @@ git submodule add -b master &lt;두번째 repo url&gt; public</p>
 			
 		      <li>
 		          <i class='fas fa-calendar'></i>
-		           06 January 2021
+		           09 January 2021
 		      </li>
 		    
 		    
