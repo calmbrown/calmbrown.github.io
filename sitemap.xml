@@ -17,6 +17,13 @@
   </url>
   
   <url>
+    <loc>https://calmbrown.github.io/vscode/</loc>
+    <lastmod>2021-01-09T11:09:03+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://calmbrown.github.io/categories/</loc>
     <lastmod>2021-01-09T09:46:11+09:00</lastmod>
     <changefreq>monthly</changefreq>

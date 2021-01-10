@@ -4,7 +4,7 @@
 	"title": "Markdown",
 	"tags": [],
 	"description": "",
-	"content": "유용한 마크다운 명령어   줄바꿈 Enter 키로 줄바꿈이 되지 않을 때 입력  \u0026lt;/br\u0026gt;   마크다운 기호로 쓰지 않고 출력하는 방법 \u0026quot; \\ \u0026ldquo;기호 앞에 붙이면 된다.  \\* \\- \r   코드 블록 코드의 위 아래를 ```로 감싸고, 코드 형식을 지정할 때 위의 ``` 옆에 코드 포멧을 붙인다.\n```python\nimport pandas ad pd\n```\n  import pandas as pd "
+	"content": "\r 인용 좀 되거라\n test\ntest\ntest\r\r유용한 마크다운 명령어   줄바꿈 Enter 키로 줄바꿈이 되지 않을 때 입력  \u0026lt;/br\u0026gt;   마크다운 기호로 쓰지 않고 출력하는 방법 \u0026quot; \\ \u0026ldquo;기호 앞에 붙이면 된다.  \\* \\- \r   코드 블록 코드의 위 아래를 ```로 감싸고, 코드 형식을 지정할 때 위의 ``` 옆에 코드 포멧을 붙인다.\n```python\nimport pandas ad pd\n```\n  import pandas as pd "
 },
 {
 	"uri": "https://calmbrown.github.io/",
@@ -12,6 +12,13 @@
 	"tags": [],
 	"description": "",
 	"content": "👨‍💻 Languages  Python   🕶 Interest  Cloud Architect AWS Go Python  "
+},
+{
+	"uri": "https://calmbrown.github.io/vscode/",
+	"title": "Vscode",
+	"tags": [],
+	"description": "",
+	"content": " 유용한 기능들이 모션 이미지와 함께 잘 성명되어있다.\n 코드 자동 정렬 Ctrl + A\n코드 여러줄 수정 Ctrl + Alt + up/down\n반복 코드 수정 Ctrl + D\n파일 수정 Ctrl + K + F\n폴더 전체에서 찾기 Ctrl + Shift + F\n입력 라인 자동 정렬 (Beaty lib 설치 되어있어야) Alt + Shift + F\n사이드바 커서이동 Ctrl + Shift + E\n사이드바 토글 Ctrl + B\n함수 정의 가기 f12\n\r참고 링크 : 비주얼 스튜디오 코드의 11가지 유용한 기능\n링크 : VsCode(visual studio code) 유용한 단축키 정리\n링크 : Visual Studio Code 단축키 정리\n"
 },
 {
 	"uri": "https://calmbrown.github.io/git/",

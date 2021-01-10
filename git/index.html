@@ -8,7 +8,7 @@
 </title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2021-01-10T11:41:41 KST">
+<meta name="revised" content="2021-01-10T20:11:07 KST">
 <meta name="description" content="">
 
 
@@ -144,7 +144,7 @@ if (!doNotTrack) {
         
 <div class="search">
 	<div class="searchbox">
-	  <input data-search-input id="search-by" type="text" placeholder="">
+	  <input data-search-input id="search-by" type="text" placeholder="Type to search...">
 	</div>
 	<script type="text/javascript" src="/vendor/lunr/lunr.min.js"></script>
 	<script type="text/javascript" src="/vendor/auto-complete/auto-complete.js"></script>
@@ -182,6 +182,21 @@ if (!doNotTrack) {
         
       
           <a href="/markdown/">Markdown</a>
+      
+    </li>
+    
+
+    <li data-nav-id="https://calmbrown.github.io/vscode/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+        
+      
+          <a href="/vscode/">Vscode</a>
       
     </li>
     
@@ -260,7 +275,7 @@ if (!doNotTrack) {
   	
 	<li >
       <a class="text-link" href="https://calmbrown.github.io/">
-        
+        Home
       </a>
     </li>
 	
@@ -303,7 +318,7 @@ if (!doNotTrack) {
 	<div class="jump-to-section">
 		<span onclick="$h = $(this);$h.next('nav').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('nav').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
   			<span class="fas fa-align-right"></span>
-  			
+  			Jump to Section
   			<i style=";" class="fas fa-chevron-right"></i>
 		</span>
 		<nav id="TableOfContents">
@@ -387,10 +402,11 @@ git rm -f example-submodule-directory
 <h2 ref="2-git-clone" >2. Git clone</h2><a class="anchor" id="2-git-clone"></a>
 <hr>
 <p>  다양한 git 소스들을 가져다 쓸때, 보통 git clone이라는 명령어를 이용해 가져온다.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-shell" data-lang="shell">git clone <span style="color:#f92672">[</span>target repo url<span style="color:#f92672">]</span> 
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-shell" data-lang="shell">git clone <span style="color:#f92672">[</span>target repo url<span style="color:#f92672">]</span>
 </code></pre></div><h2 ref="br-" ><br /></h2><a class="anchor" id="br-"></a>
 
-		<script src="https://utteranc.es/client.js"
+		
+	  <script src="https://utteranc.es/client.js"
 			repo="calmbrown/blog-comment"
 			issue-term="pathname"
 			theme="github-light"
@@ -408,7 +424,7 @@ git rm -f example-submodule-directory
 	<div class="chevrons">
 		<a class="next" href="/hugo-init/" title="Hugo" style="margin-right: 0px;">
             <div>
-                <p></p>
+                <p>Next page</p>
                 <label>Hugo</label>
             </div>
             <i class="fas fa-arrow-right" style="font-size: 1.7em"></i></a>
@@ -431,7 +447,7 @@ git rm -f example-submodule-directory
 	    	
 	  	
 	<div class="TableOfContents">
-    <label><i class="fas fa-align-right"></i>&nbsp;&nbsp;</label>
+    <label><i class="fas fa-align-right"></i>&nbsp;&nbsp;What&#39;s on this page</label>
     <nav>
         <ul >
             <li><a href="/git/">Git</a></li>
@@ -465,7 +481,7 @@ git rm -f example-submodule-directory
 			
 		      <li>
 		          <i class='fas fa-calendar'></i>
-		           09 January 2021
+		          Last update on 09 January 2021
 		      </li>
 		    
 		    
@@ -487,7 +503,7 @@ git rm -f example-submodule-directory
 	
 			
 		
-	    	
+	    	Create a content/_layout/footer/_index.md file to customize the footer content !
 	  	
 	
     </footer>
