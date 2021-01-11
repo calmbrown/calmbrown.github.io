@@ -4,7 +4,7 @@
 	"title": "Markdown",
 	"tags": [],
 	"description": "",
-	"content": "\r 인용 좀 되거라\n test\ntest\ntest\r\r유용한 마크다운 명령어   줄바꿈 Enter 키로 줄바꿈이 되지 않을 때 입력  \u0026lt;/br\u0026gt;   마크다운 기호로 쓰지 않고 출력하는 방법 \u0026quot; \\ \u0026ldquo;기호 앞에 붙이면 된다.  \\* \\- \r   코드 블록 코드의 위 아래를 ```로 감싸고, 코드 형식을 지정할 때 위의 ``` 옆에 코드 포멧을 붙인다.\n```python\nimport pandas ad pd\n```\n  import pandas as pd "
+	"content": "유용한 마크다운 명령어   줄바꿈 Enter 키로 줄바꿈이 되지 않을 때 입력  \u0026lt;/br\u0026gt; \r\r 마크다운 기호로 쓰지 않고 출력하는 방법 \u0026quot; \\ \u0026ldquo;기호 앞에 붙이면 된다.  \\* \\- \r\r 코드 블록 코드의 위 아래를 ```로 감싸고, 코드 형식을 지정할 때 위의 ``` 옆에 코드 포멧을 붙인다.  Markdown 입력\n\\```python import pandas ad pd \\``` 출력 결과\nimport pandas as pd "
 },
 {
 	"uri": "https://calmbrown.github.io/",
@@ -18,7 +18,7 @@
 	"title": "Vscode",
 	"tags": [],
 	"description": "",
-	"content": " 유용한 기능들이 모션 이미지와 함께 잘 성명되어있다.\n 코드 자동 정렬 Ctrl + A\n코드 여러줄 수정 Ctrl + Alt + up/down\n반복 코드 수정 Ctrl + D\n파일 수정 Ctrl + K + F\n폴더 전체에서 찾기 Ctrl + Shift + F\n입력 라인 자동 정렬 (Beaty lib 설치 되어있어야) Alt + Shift + F\n사이드바 커서이동 Ctrl + Shift + E\n사이드바 토글 Ctrl + B\n함수 정의 가기 f12\n\r참고 링크 : 비주얼 스튜디오 코드의 11가지 유용한 기능\n링크 : VsCode(visual studio code) 유용한 단축키 정리\n링크 : Visual Studio Code 단축키 정리\n"
+	"content": " 유용한 기능들이 모션 이미지와 함께 잘 성명되어있다.\n Ctrl + A : 코드 자동 정렬\nCtrl + Alt + up/down : 코드 여러줄 수정\nCtrl + D : 반복 코드 수정\nCtrl + K + F : 파일 수정\nCtrl + Shift + F : 폴더 전체에서 찾기\nAlt + Shift + F : 입력 라인 자동 정렬 (Beaty lib 설치 되어있어야)\nCtrl + Shift + E : 사이드바 커서이동\nCtrl + B : 사이드바 토글\nf12 : 함수 정의 가기\n\r참고 링크 : 비주얼 스튜디오 코드의 11가지 유용한 기능\n링크 : VsCode(visual studio code) 유용한 단축키 정리\n링크 : Visual Studio Code 단축키 정리\n"
 },
 {
 	"uri": "https://calmbrown.github.io/git/",
@@ -29,15 +29,15 @@
 },
 {
 	"uri": "https://calmbrown.github.io/hugo-init/",
-	"title": "Hugo",
-	"tags": [],
-	"description": "",
-	"content": "hugo blog 구축기 hugo 설치 Est in vagis et Pittheus tu arge accipiter regia iram vocatur nurus. Omnes ut olivae sensit arma sorori deducit, inesset crudus, ego vetuere aliis, modo arsit? Utinam rapta fiducia valuere litora adicit cursu, ad facies\r\rgit 설치 Ea furtique risere fratres edidit terrae magis. Colla tam mihi tenebat: miseram excita suadent es pecudes iam. Concilio quam velatus posset ait quod nunc! Fragosis suae dextra geruntur functus vulgata.\r\r Tempora nisi nunc Lorem markdownum emicat gestu. Cannis sol pressit ducta. Est Idaei, tremens ausim se tutaeque, illi ulnis hausit, sed, lumina cutem. Quae avis sequens!\nvar panel = ram_design; if (backup + system) { file.readPoint = network_native; sidebar_engine_device(cell_tftp_raster, dual_login_paper.adf_vci.application_reader_design( graphicsNvramCdma, lpi_footer_snmp, integer_model)); } Locis suis novi cum suoque decidit eadem Idmoniae ripis, at aves, ali missa adest, ut et autem, et ab?\n"
-},
-{
-	"uri": "https://calmbrown.github.io/hugo-init/hugo-create/",
 	"title": "Hugo 사용기",
 	"tags": [],
 	"description": "",
 	"content": "1. Hugo 와 Github를 이용한 블로그 만들기   Git 설치\n링크 : 깃 허브 홈페이지\n  Hugo 설치\n https://github.com/gohugoio/hugo/releases\n환경변수 설정\n   Hugo 프로젝트 만들기\n hugo new site 프로젝트 이름\n   Git remote\n git init\ngit remote add origin \u0026lt;첫번째 repo url\u0026gt;\ngit submodule add -b master \u0026lt;두번째 repo url\u0026gt; public\n   Git subdirectory\n  Hugo server 다루는 법\n  출처 : hugo와 github page를 이용한 블로그 만들기\nHugo 새로운 글 쓰기 hugo new 파일이름.md hugo server -D draft = true 지우기 hugo cd public git add . git commit -m \u0026#34;커밋 메세지\u0026#34; git push origin master cd .. git add . git commit -m \u0026#34;커밋 메세지\u0026#34; git push origin master 2. Hugo 커스터마이징 출처 : 휴고 테마 커스터마이징 하기\n3. 마크다운 출처 : 마크다운 markdown 작성법\n코드블럭 사용하는 법\nimport pandas as pd 4. Google Analytics 추가 5. Google 검색 엔진 추가 "
+},
+{
+	"uri": "https://calmbrown.github.io/404.html",
+	"title": "Whoops! Page not found",
+	"tags": [],
+	"description": "This is a 404 page",
+	"content": "That page can\u0026rsquo;t be found.\nOur latest content is on the homepage.\nPhoto by Aron Visuals on Unsplash"
 }]

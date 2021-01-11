@@ -5,92 +5,67 @@
   <url>
     <loc>https://calmbrown.github.io/markdown/</loc>
     <lastmod>2021-01-10T09:39:03+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://calmbrown.github.io/</loc>
     <lastmod>2021-01-09T20:31:56+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://calmbrown.github.io/vscode/</loc>
     <lastmod>2021-01-09T11:09:03+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://calmbrown.github.io/categories/</loc>
-    <lastmod>2021-01-09T09:46:11+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://calmbrown.github.io/tags/content/</loc>
-    <lastmod>2021-01-09T09:46:11+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://calmbrown.github.io/categories/development/</loc>
-    <lastmod>2021-01-09T09:46:11+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://calmbrown.github.io/git/</loc>
     <lastmod>2021-01-09T09:46:11+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://calmbrown.github.io/tags/hugo/</loc>
-    <lastmod>2021-01-09T09:46:11+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://calmbrown.github.io/categories/publishing/</loc>
-    <lastmod>2021-01-09T09:46:11+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://calmbrown.github.io/tags/static-site-generator/</loc>
-    <lastmod>2021-01-09T09:46:11+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://calmbrown.github.io/tags/</loc>
-    <lastmod>2021-01-09T09:46:11+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://calmbrown.github.io/hugo-init/</loc>
     <lastmod>2021-01-06T13:46:13+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://calmbrown.github.io/hugo-init/hugo-create/</loc>
-    <lastmod>2021-01-06T13:46:13+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://calmbrown.github.io/404.html</loc>
+    <lastmod>2020-09-08T20:40:23+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://calmbrown.github.io/_layout/</loc>
+    <lastmod>2020-08-20T15:41:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://calmbrown.github.io/_layout/footer/</loc>
+    <lastmod>2020-08-20T15:41:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://calmbrown.github.io/_layout/sidebar-before/</loc>
+    <lastmod>2020-08-20T11:08:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://calmbrown.github.io/_layout/sidebar-after/</loc>
+    <lastmod>2020-08-20T11:07:48+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://calmbrown.github.io/_layout/article-sidebar-after/</loc>
+  </url>
+  
+  <url>
+    <loc>https://calmbrown.github.io/_layout/netlifycms/</loc>
+  </url>
+  
+  <url>
+    <loc>https://calmbrown.github.io/admin/config.yml</loc>
+  </url>
+  
+  <url>
+    <loc>https://calmbrown.github.io/admin/index.html/</loc>
   </url>
   
 </urlset>
