@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://calmbrown.github.io/hugo-init/</loc>
+    <lastmod>2021-01-06T13:46:13+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://calmbrown.github.io/markdown/</loc>
     <lastmod>2021-01-10T09:39:03+09:00</lastmod>
   </url>
@@ -20,11 +25,6 @@
   <url>
     <loc>https://calmbrown.github.io/git/</loc>
     <lastmod>2021-01-09T09:46:11+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://calmbrown.github.io/hugo-init/</loc>
-    <lastmod>2021-01-06T13:46:13+09:00</lastmod>
   </url>
   
   <url>

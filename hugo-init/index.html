@@ -8,7 +8,7 @@
 </title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2021-01-11T13:29:59 KST">
+<meta name="revised" content="2021-01-11T14:09:39 KST">
 <meta name="description" content="">
 
 
@@ -171,6 +171,21 @@ if (!doNotTrack) {
 
 <ul class="menu">
 
+    <li data-nav-id="https://calmbrown.github.io/hugo-init/" class="dd-item parent active
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+        
+      
+          <a href="/hugo-init/">Hugo 사용기</a>
+      
+    </li>
+    
+
     <li data-nav-id="https://calmbrown.github.io/markdown/" class="dd-item
         item_level_$level
         ">
@@ -212,21 +227,6 @@ if (!doNotTrack) {
         
       
           <a href="/git/">Git</a>
-      
-    </li>
-    
-
-    <li data-nav-id="https://calmbrown.github.io/hugo-init/" class="dd-item parent active
-        item_level_$level
-        ">
-
-      
-      
-      
-      
-        
-      
-          <a href="/hugo-init/">Hugo 사용기</a>
       
     </li>
     
@@ -318,10 +318,12 @@ if (!doNotTrack) {
     <li>
       <ul>
         <li><a href="#1-hugo-와-github를-이용한-블로그-만들기">1. Hugo 와 Github를 이용한 블로그 만들기</a></li>
-        <li><a href="#2-hugo-커스터마이징">2. Hugo 커스터마이징</a></li>
-        <li><a href="#3-마크다운">3. 마크다운</a></li>
-        <li><a href="#4-google-analytics-추가">4. Google Analytics 추가</a></li>
-        <li><a href="#5-google-검색-엔진-추가">5. Google 검색 엔진 추가</a></li>
+        <li><a href="#2-hugo-새로운-글-쓰기">2. Hugo 새로운 글 쓰기</a></li>
+        <li><a href="#3-hugo-커스터마이징">3. Hugo 커스터마이징</a></li>
+        <li><a href="#4-마크다운">4. 마크다운</a></li>
+        <li><a href="#5-google-analytics-추가">5. Google Analytics 추가</a></li>
+        <li><a href="#6-google-검색-엔진-추가">6. Google 검색 엔진 추가</a></li>
+        <li><a href="#7-댓글-기능-추가">7. 댓글 기능 추가</a></li>
       </ul>
     </li>
   </ul>
@@ -371,7 +373,8 @@ git submodule add -b master &lt;두번째 repo url&gt; public</p>
 </li>
 </ol>
 <p>출처 : <a href="https://medium.com/@bjs1616/hugo%EC%99%80-github-page%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-9eb1a5b50d91">hugo와 github page를 이용한 블로그 만들기</a></p>
-<h4 ref="hugo-새로운-글-쓰기" >Hugo 새로운 글 쓰기</h4><a class="anchor" id="hugo-새로운-글-쓰기"></a>
+</br>
+<h3 ref="2-hugo-새로운-글-쓰기" >2. Hugo 새로운 글 쓰기</h3><a class="anchor" id="2-hugo-새로운-글-쓰기"></a>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-shell" data-lang="shell">    hugo new 파일이름.md
     hugo server -D
     draft <span style="color:#f92672">=</span> true 지우기
@@ -384,14 +387,56 @@ git submodule add -b master &lt;두번째 repo url&gt; public</p>
     git add .
     git commit -m <span style="color:#e6db74">&#34;커밋 메세지&#34;</span>
     git push origin master
-</code></pre></div><h3 ref="2-hugo-커스터마이징" >2. Hugo 커스터마이징</h3><a class="anchor" id="2-hugo-커스터마이징"></a>
+</code></pre></div></br>
+<h3 ref="3-hugo-커스터마이징" >3. Hugo 커스터마이징</h3><a class="anchor" id="3-hugo-커스터마이징"></a>
 <p>출처 : <a href="https://zzossig.io/posts/hugo/theme_customizing/">휴고 테마 커스터마이징 하기</a></p>
-<h3 ref="3-마크다운" >3. 마크다운</h3><a class="anchor" id="3-마크다운"></a>
+</br>
+<h3 ref="4-마크다운" >4. 마크다운</h3><a class="anchor" id="4-마크다운"></a>
 <p>출처 : <a href="https://gist.github.com/ihoneymon/652be052a0727ad59601">마크다운 markdown 작성법</a></p>
 <p>코드블럭 사용하는 법</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
-</code></pre></div><h3 ref="4-google-analytics-추가" >4. Google Analytics 추가</h3><a class="anchor" id="4-google-analytics-추가"></a>
-<h3 ref="5-google-검색-엔진-추가" >5. Google 검색 엔진 추가</h3><a class="anchor" id="5-google-검색-엔진-추가"></a>
+</code></pre></div></br>
+<h3 ref="5-google-analytics-추가" >5. Google Analytics 추가</h3><a class="anchor" id="5-google-analytics-추가"></a>
+<p>Hugo config.toml 파일에 아래 사항 추가</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">googleanalytics</span> = <span style="color:#e6db74">&#34;UA-xxxxxxx&#34;</span>
+</code></pre></div></br>
+<h3 ref="6-google-검색-엔진-추가" >6. Google 검색 엔진 추가</h3><a class="anchor" id="6-google-검색-엔진-추가"></a>
+<p>root/layouts/partials/body-article-content.html의</p>
+<p>웹에 배포 된 index.html을 보면 다음과 같이 추가된다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;application/javascript&#34;</span>&gt;
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">doNotTrack</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
+<span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">doNotTrack</span>) {
+	(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">i</span>,<span style="color:#a6e22e">s</span>,<span style="color:#a6e22e">o</span>,<span style="color:#a6e22e">g</span>,<span style="color:#a6e22e">r</span>,<span style="color:#a6e22e">a</span>,<span style="color:#a6e22e">m</span>){<span style="color:#a6e22e">i</span>[<span style="color:#e6db74">&#39;GoogleAnalyticsObject&#39;</span>]<span style="color:#f92672">=</span><span style="color:#a6e22e">r</span>;<span style="color:#a6e22e">i</span>[<span style="color:#a6e22e">r</span>]<span style="color:#f92672">=</span><span style="color:#a6e22e">i</span>[<span style="color:#a6e22e">r</span>]<span style="color:#f92672">||</span><span style="color:#66d9ef">function</span>(){
+	(<span style="color:#a6e22e">i</span>[<span style="color:#a6e22e">r</span>].<span style="color:#a6e22e">q</span><span style="color:#f92672">=</span><span style="color:#a6e22e">i</span>[<span style="color:#a6e22e">r</span>].<span style="color:#a6e22e">q</span><span style="color:#f92672">||</span>[]).<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">arguments</span>)},<span style="color:#a6e22e">i</span>[<span style="color:#a6e22e">r</span>].<span style="color:#a6e22e">l</span><span style="color:#f92672">=</span><span style="color:#ae81ff">1</span><span style="color:#f92672">*</span><span style="color:#66d9ef">new</span> Date();<span style="color:#a6e22e">a</span><span style="color:#f92672">=</span><span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">createElement</span>(<span style="color:#a6e22e">o</span>),
+	<span style="color:#a6e22e">m</span><span style="color:#f92672">=</span><span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">getElementsByTagName</span>(<span style="color:#a6e22e">o</span>)[<span style="color:#ae81ff">0</span>];<span style="color:#a6e22e">a</span>.<span style="color:#66d9ef">async</span><span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>;<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#a6e22e">g</span>;<span style="color:#a6e22e">m</span>.<span style="color:#a6e22e">parentNode</span>.<span style="color:#a6e22e">insertBefore</span>(<span style="color:#a6e22e">a</span>,<span style="color:#a6e22e">m</span>)
+	})(window,document,<span style="color:#e6db74">&#39;script&#39;</span>,<span style="color:#e6db74">&#39;https://www.google-analytics.com/analytics.js&#39;</span>,<span style="color:#e6db74">&#39;ga&#39;</span>);
+	<span style="color:#a6e22e">ga</span>(<span style="color:#e6db74">&#39;create&#39;</span>, <span style="color:#e6db74">&#39;UA-xxxxxxxx&#39;</span>, <span style="color:#e6db74">&#39;auto&#39;</span>);
+	
+	<span style="color:#a6e22e">ga</span>(<span style="color:#e6db74">&#39;send&#39;</span>, <span style="color:#e6db74">&#39;pageview&#39;</span>);
+}
+&lt;/<span style="color:#f92672">script</span>&gt;
+
+</code></pre></div></br>
+<h3 ref="7-댓글-기능-추가" >7. 댓글 기능 추가</h3><a class="anchor" id="7-댓글-기능-추가"></a>
+<p>blog-comment repository 생성</p>
+<p>content class에 다음 스크립트 추가</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-html" data-lang="html">&lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://utteranc.es/client.js&#34;</span>
+    <span style="color:#a6e22e">repo</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;calmbrown/blog-comment&#34;</span>
+    <span style="color:#a6e22e">issue-term</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;pathname&#34;</span>
+    <span style="color:#a6e22e">theme</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;github-light&#34;</span>
+    <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span>
+    <span style="color:#a6e22e">async</span>&gt;
+    &lt;/<span style="color:#f92672">script</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;
+</code></pre></div></br>
+<p>&hellip; 테마를 옮겨야겠다. 기본적인 마크다운 기능이 적용이 안된다.</p>
+<ol>
+<li>인용문 적용</li>
+<li>html 적용 ( 자체 아이콘등 기능은 많지만 락인 되기는 싫어, markdown 고유하게 이용)</li>
+</ol>
+<p>마땅한 theme 가없네</p>
+<p>왼쪽에 목록기능 구성되고, 토글 되는 theme 추천좀</p>
 
 		
 	  <script src="https://utteranc.es/client.js"
@@ -446,10 +491,12 @@ git submodule add -b master &lt;두번째 repo url&gt; public</p>
     <li>
       <ul>
         <li><a href="#1-hugo-와-github를-이용한-블로그-만들기">1. Hugo 와 Github를 이용한 블로그 만들기</a></li>
-        <li><a href="#2-hugo-커스터마이징">2. Hugo 커스터마이징</a></li>
-        <li><a href="#3-마크다운">3. 마크다운</a></li>
-        <li><a href="#4-google-analytics-추가">4. Google Analytics 추가</a></li>
-        <li><a href="#5-google-검색-엔진-추가">5. Google 검색 엔진 추가</a></li>
+        <li><a href="#2-hugo-새로운-글-쓰기">2. Hugo 새로운 글 쓰기</a></li>
+        <li><a href="#3-hugo-커스터마이징">3. Hugo 커스터마이징</a></li>
+        <li><a href="#4-마크다운">4. 마크다운</a></li>
+        <li><a href="#5-google-analytics-추가">5. Google Analytics 추가</a></li>
+        <li><a href="#6-google-검색-엔진-추가">6. Google 검색 엔진 추가</a></li>
+        <li><a href="#7-댓글-기능-추가">7. 댓글 기능 추가</a></li>
       </ul>
     </li>
   </ul>
