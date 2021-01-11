@@ -8,7 +8,7 @@
 </title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2021-01-11T14:09:39 KST">
+<meta name="revised" content="2021-01-11T14:15:25 KST">
 <meta name="description" content="">
 
 
@@ -401,7 +401,6 @@ git submodule add -b master &lt;두번째 repo url&gt; public</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">googleanalytics</span> = <span style="color:#e6db74">&#34;UA-xxxxxxx&#34;</span>
 </code></pre></div></br>
 <h3 ref="6-google-검색-엔진-추가" >6. Google 검색 엔진 추가</h3><a class="anchor" id="6-google-검색-엔진-추가"></a>
-<p>root/layouts/partials/body-article-content.html의</p>
 <p>웹에 배포 된 index.html을 보면 다음과 같이 추가된다.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;application/javascript&#34;</span>&gt;
 <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">doNotTrack</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
@@ -416,9 +415,12 @@ git submodule add -b master &lt;두번째 repo url&gt; public</p>
 }
 &lt;/<span style="color:#f92672">script</span>&gt;
 
+</code></pre></div><p>google 검색창에 다음과 같이 치면 된다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-text" data-lang="text">site : yoursite.com
 </code></pre></div></br>
 <h3 ref="7-댓글-기능-추가" >7. 댓글 기능 추가</h3><a class="anchor" id="7-댓글-기능-추가"></a>
 <p>blog-comment repository 생성</p>
+<p>root/layouts/partials/body-article-content.html의</p>
 <p>content class에 다음 스크립트 추가</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-html" data-lang="html">&lt;/<span style="color:#f92672">div</span>&gt;
     &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://utteranc.es/client.js&#34;</span>
