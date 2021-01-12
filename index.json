@@ -2,14 +2,14 @@
 {
 	"uri": "https://calmbrown.github.io/hugo-init/",
 	"title": "Hugo 사용기",
-	"tags": [],
+	"tags": ["hugo", "content", "google analytics", "google search", "static site generator"],
 	"description": "",
 	"content": "1. Hugo 와 Github를 이용한 블로그 만들기   Git 설치\n링크 : 깃 허브 홈페이지\n  Hugo 설치\n https://github.com/gohugoio/hugo/releases\n환경변수 설정\n   Hugo 프로젝트 만들기\n hugo new site 프로젝트 이름\n   Git remote\n git init\ngit remote add origin \u0026lt;첫번째 repo url\u0026gt;\ngit submodule add -b master \u0026lt;두번째 repo url\u0026gt; public\n   Git subdirectory\n  Hugo server 다루는 법\n  출처 : hugo와 github page를 이용한 블로그 만들기\n\r2. Hugo 새로운 글 쓰기 hugo new 파일이름.md hugo server -D draft = true 지우기 hugo cd public git add . git commit -m \u0026#34;커밋 메세지\u0026#34; git push origin master cd .. git add . git commit -m \u0026#34;커밋 메세지\u0026#34; git push origin master \r3. Hugo 커스터마이징 출처 : 휴고 테마 커스터마이징 하기\n\r4. 마크다운 출처 : 마크다운 markdown 작성법\n코드블럭 사용하는 법\nimport pandas as pd \r5. Google Analytics 추가 Hugo config.toml 파일에 아래 사항 추가\ngoogleanalytics = \u0026#34;UA-xxxxxxx\u0026#34; \r6. Google 검색 엔진 추가 웹에 배포 된 index.html을 보면 다음과 같이 추가된다.\n\u0026lt;script type=\u0026#34;application/javascript\u0026#34;\u0026gt; var doNotTrack = false; if (!doNotTrack) { (function(i,s,o,g,r,a,m){i[\u0026#39;GoogleAnalyticsObject\u0026#39;]=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,\u0026#39;script\u0026#39;,\u0026#39;https://www.google-analytics.com/analytics.js\u0026#39;,\u0026#39;ga\u0026#39;); ga(\u0026#39;create\u0026#39;, \u0026#39;UA-xxxxxxxx\u0026#39;, \u0026#39;auto\u0026#39;); ga(\u0026#39;send\u0026#39;, \u0026#39;pageview\u0026#39;); } \u0026lt;/script\u0026gt; google 검색창에 다음과 같이 치면 된다.\nsite : yoursite.com \r7. 댓글 기능 추가 blog-comment repository 생성\nroot/layouts/partials/body-article-content.html의\ncontent class에 다음 스크립트 추가\n\u0026lt;/div\u0026gt; \u0026lt;script src=\u0026#34;https://utteranc.es/client.js\u0026#34; repo=\u0026#34;calmbrown/blog-comment\u0026#34; issue-term=\u0026#34;pathname\u0026#34; theme=\u0026#34;github-light\u0026#34; crossorigin=\u0026#34;anonymous\u0026#34; async\u0026gt; \u0026lt;/script\u0026gt; \u0026lt;/div\u0026gt; \r\u0026hellip; 테마를 옮겨야겠다. 기본적인 마크다운 기능이 적용이 안된다.\n 인용문 적용 html 적용 ( 자체 아이콘등 기능은 많지만 락인 되기는 싫어, markdown 고유하게 이용)  마땅한 theme 가없네\n왼쪽에 목록기능 구성되고, 토글 되는 theme 추천좀\n"
 },
 {
 	"uri": "https://calmbrown.github.io/markdown/",
 	"title": "Markdown",
-	"tags": [],
+	"tags": ["markdown", "codeblock", "br"],
 	"description": "",
 	"content": "유용한 마크다운 명령어  줄바꿈 Enter 키로 줄바꿈이 되지 않을 때 입력\n\u0026lt;/br\u0026gt; \r\r마크다운 기호 그대로 출력하는 방법 \u0026quot; \\ \u0026ldquo;기호 앞에 붙이면 된다.\n\\* \\- \r코드 블록 코드의 위 아래를 ```로 감싸고, 코드 형식을 지정할 때 위의 ``` 옆에 코드 포멧을 붙인다.\n Markdown 입력  \\```python import pandas ad pd \\```  출력 결과  import pandas as pd "
 },
@@ -23,14 +23,14 @@
 {
 	"uri": "https://calmbrown.github.io/vscode/",
 	"title": "Vscode",
-	"tags": [],
+	"tags": ["vscode", "toggle", "multiline"],
 	"description": "",
-	"content": " 유용한 기능들이 모션 이미지와 함께 잘 성명되어있다.\n Ctrl + A : 코드 자동 정렬\nCtrl + Alt + up/down : \u0026lsquo;코드 여러줄 수정\u0026rsquo; \u0026lsquo;sdfd\u0026rsquo; jj\nCtrl + D : 반복 코드 수정\nCtrl + K + F : 파일 수정\nCtrl + Shift + F : 폴더 전체에서 찾기\nAlt + Shift + F : 입력 라인 자동 정렬 (Beaty lib 설치 되어있어야)\nCtrl + Shift + E : 사이드바 커서이동\nCtrl + B : 사이드바 토글\nf12 : 함수 정의 가기\n\r참고 링크 : 비주얼 스튜디오 코드의 11가지 유용한 기능\n링크 : VsCode(visual studio code) 유용한 단축키 정리\n링크 : Visual Studio Code 단축키 정리\n"
+	"content": " 유용한 기능들이 모션 이미지와 함께 잘 성명되어있다.\n Ctrl + A : 코드 자동 정렬\nCtrl + Alt + up/down : \u0026lsquo;코드 여러줄 수정\u0026rsquo;\nCtrl + D : 반복 코드 수정\nCtrl + K + F : 파일 수정\nCtrl + Shift + F : 폴더 전체에서 찾기\nAlt + Shift + F : 입력 라인 자동 정렬 (Beaty lib 설치 되어있어야)\nCtrl + Shift + E : 사이드바 커서이동\nCtrl + B : 사이드바 토글\nf12 : 함수 정의 가기\n\r참고 링크 : 비주얼 스튜디오 코드의 11가지 유용한 기능\n링크 : VsCode(visual studio code) 유용한 단축키 정리\n링크 : Visual Studio Code 단축키 정리\n"
 },
 {
 	"uri": "https://calmbrown.github.io/git/",
 	"title": "Git",
-	"tags": ["hugo", "content", "static site generator"],
+	"tags": ["git", "submodule", "repository", "remote", "push", "add", "clone"],
 	"description": "",
 	"content": "- Git 원격(remote)으로 관리하기   Git은 소스코드를 효과적으로 관리하기 위해 개발된 \u0026lsquo;분산형 버전 관리 시스템\u0026rsquo;이다. 우리는 이 Git을 이용기위해 가장먼저 Github 홈페이지에서 저장소(repository)를 만들고, 이를 로컬에서 원격으로 관리한다.\n 본 포스팅에서는 Git의 설치와 repository 가 github에 생성이 완료되었다는 가정하에, git 저장소(repository)를 로컬에서 원격으로 관리하고 그 서브모듈(submodule) 까지 관리하는 것을 설명한다.\n\n1. Git remote 설정  origin 으로 설정할 directory 및 repository를 선정. ( repository 없을 경우 github 에서 생성할 것.) origin 하위에 생성할 submodule의 directory 및 repository를 선정. origin directory로 이동하며 아래와 같은 명령어를 실행한다.   submodule 이란?\nsubmodule 이란 origin repo에서 다른 repo를 하위 모듈로 갖을 때 지정하는 방식이다. git은 기본적으로 repo 밑에 repo, 즉 하위 repo를 두지 못한다. (origin은 반드시 하나이다.) submodule 은 이를 가능하게 하기위해, 먼저 origin repo를 지정하고 이후에 submodule 명령어로 하위 repo를 지정하는 방식이다. 그 방법은 아래와 같다.  # origin directory로 이동 cd [origin 디렉토리] # git 초기화 git init # origin repo url로 연결. url은 github에 생성한 repo에서 복사 가능 git remote add orgin [orign repo url] # submodule 추가 명령어. git submodule add -b master [sub repo url] [sub directory] # 수정한 파일들 추가 git add . # 위에서 add 로 추가한 내용, 메시지와 함께 commit  git commit -m \u0026#34;example message\u0026#34; # commit 한 내용 push. master는 branch 이름 git push origin master \n추가 참고사항   서브 디렉토리는 submodule 명령어 입력하면 자동으로 생긴다.\n git remote 설정 시 orign이 이미 있다고 에러가 날때, 아래 명령어로 기존의 origin을 제거한다.\ngit remote rm origin \nsubmodule 제거 방법 # submodule 을 origin에서 제거 git submodule deinit -f example-submodule-directory # local git module 제거 rm -rf .git/modules/example-submodule-directory # local 에서 제거 git rm -f example-submodule-directory \n2. Git clone   다양한 git 소스들을 가져다 쓸때, 보통 git clone이라는 명령어를 이용해 가져온다.\ngit clone [target repo url]  "
 },
